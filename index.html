@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu camiseta</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <div id="menu">
+        <input type="text" placeholder="Título" id="tituloInput"/>
+        <div>
+            <input type="range" id="slider1" min="0" max="100">
+        </div>
+        <div>
+            <input type="range" id="slider2" min="0" max="100">
+        </div>
+        <div>
+            <input type="radio" id="black" name="color" value="black">
+            <label for="black">Negro</label>
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">Blanco</label>
+        </div>
+        <p>Imágenes (Arrastra hacia la camiseta):</p>
+        <div>
+            <div class="draggable" draggable="true"><img src="img/draggables/Isaac.jpg"></div>
+            <div class="draggable" draggable="true"><img src="img/draggables/Knekro.jpg"></div>
+            <div class="draggable" draggable="true"><img src="img/draggables/Sans.png"></div>
+            <div class="draggable" draggable="true"><img src="img/draggables/Goku.jpg"></div>
+        </div>
+    </div>
+    
+    <div id="contenedor">
+        <div id="imagen">
+            <img id="camiseta" src="img/camiseta/black.png" draggable="false">
+            <div id="medio">Aqui irá la imagen</div>
+            <div id="titulo">Titulo</div>
+            <div id="invertido"></div>
+            </img>
+        </div>
+    </div>
+    
+</body>
+</html>
